@@ -1,4 +1,18 @@
 body {
-    background-image: url("tealscales.png");
+    background-image: url("blandstar.jpg");
     background-repeat: repeat;
+}
+
+.navbar-brand {
+    background-color: rgb(74, 170, 165);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(102, 102, 102);
+    border-top: rgb(74, 170, 165) thick solid;
 }
