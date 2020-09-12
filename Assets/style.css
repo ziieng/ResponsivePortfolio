@@ -6,7 +6,14 @@ body {
 .navbar-brand {
     background-color: rgb(74, 170, 165);
     font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
     color: white;
+}
+
+h1 {
+    color: rgb(74, 170, 165);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .footer {
