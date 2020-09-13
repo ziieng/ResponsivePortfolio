@@ -39,13 +39,33 @@
     </nav>
     <!-- End nav bar -->
 
-    <!-- Body stuff specific to page here -->
-    <main role="main" class="flex-shrink-0"> Contact form!</main>
-
+    <!-- Main body - Contact form -->
+    <div class="container">
+        <main class="col-md-8 bg-white my-5 py-3 clearfix">
+            <h1>Contact</h1>
+            <hr>
+            <form>
+                <div class="form-group">
+                    <label for="ContactName">Name</label>
+                    <input type="text" class="form-control" id="ContactName" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="ContactEmail">Email</label>
+                    <input type="email" class="form-control" id="ContactEmail" placeholder="Email">
+                    <!-- <small id="emailHelp" class="form-text text-muted">I won't share your email with anyone else.</small> -->
+                </div>
+                <div class="form-group">
+                    <label for="ContactMessage">Message</label>
+                    <textarea class="form-control" rows="3" id="ContactMessage" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-info py-3 px-4">Submit</button>
+            </form>
+        </main>
+    </div>
 
 
     <!-- Start footer -->
-    <footer class="footer py-3">
+    <footer class="footer py-3 mt-5">
         <div class="container d-flex justify-content-center">
             <span class="text-muted">&copy; Copyright 2020 Christina Engelhardt</span>
         </div>
