@@ -18,11 +18,14 @@ For this assignment, we were provided with screenshots of a 3-page portfolio and
 The 9 images provided for the assignment showed how the design should respond to different screen widths. 
 ![Starting Template](Assets/templatecap.png)
 
+Without being given the background image used in the template, we were tasked with finding or making one that fit the same colors. Using Photoshop, I pulled the RGB values for all the colors used in the templates and created a simple background. Through trial and error, I found the columns used to make the content for each resolution flow correctly.
+
 ### Challenges and Adaptations
+The hardest part was getting a footer that would stick to the bottom of the window but still keep space between the white content area and the start of the footer. To force that transition, I added in an empty &lt;div&gt; that had Bootstrap's "my-" class to create enough space to bridge the gap.
 
 ### Built With
 
-* Bootstrap elements from [https://getbootstrap.com/] (https://getbootstrap.com/)
+* Bootstrap elements from [getbootstrap.com](https://getbootstrap.com/)
 * jQuery links, as requested by Bootstrap's installation instructions.
 
 ## Contact
