@@ -1,3 +1,5 @@
+(This branch is to archive the original version of this assignment as submitted. It got better.)
+
 # ResponsivePortfolio
 Second Homework assignment for uw-sea-fsf-pt-08-2020-u-c, looking to build [a mobile-first, responsive portfolio based on screenshots provided.][1].
 
