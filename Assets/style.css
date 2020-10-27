@@ -1,20 +1,34 @@
+/* dark teal: 105266
+light teal: 187996
+dark purple: 272635
+light purple: 503859
+whiteish: F2F4FF */
+
 body {
-    background-image: url("blandstarsmall.jpg");
+    background-image: url("fadedscales.png");
     background-repeat: repeat;
+    font-family: 'Open Sans',
+    sans-serif;
+    background-color: #F2F4FF;
 }
 
 .navbar-brand {
-    background-color: rgb(74, 170, 165);
-    font-family: 'Times New Roman', Times, serif;
+    background-color: #105266;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 10px;
+    font-family: 'Overlock',
+    cursive;
     font-weight: bold;
     font-size: x-large;
-    color: white;
+    color: #F2F4FF;
 }
 
 h1 {
-    color: rgb(74, 170, 165);
+    color: #105266;
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Overlock',
+    cursive;
 }
 
 .footer {
@@ -22,12 +36,6 @@ h1 {
     bottom: 0;
     margin-top: 2rem;
     width: 100%;
-    background-color: rgb(105, 105, 105);
-    border-top: rgb(74, 170, 165) thick solid;
-}
-
-.btn-info {
-    background-color: rgb(74, 170, 165);
-    border-radius: 0px !important;
-    border-color: rgb(74, 170, 165);
+    background-color: #272635;
+    border-top: #105266 thick solid;
 }
