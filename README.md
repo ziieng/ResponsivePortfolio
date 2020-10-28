@@ -12,11 +12,9 @@ Second Homework assignment for uw-sea-fsf-pt-08-2020-u-c, looking to build [a mo
 ## Description 
 For this assignment, we were provided with screenshots of a 3-page portfolio and how it should be rendered at each of 3 screen widths: 400px, 768 px, and 992 px. From these images, we were asked to replicate the design and create our own About, Contact, and Portfolio pages with the same color scheme and fonts.
 
-![Project Screenshot](Assets/ScreencapAnimation.gif)
 
 ### The Starting Point
 The 9 images provided for the assignment showed how the design should respond to different screen widths. 
-![Starting Template](Assets/TemplateAnimation.gif)
 
 Without being given the background image used in the template, we were tasked with finding or making one that fit the same colors. Using Photoshop, I pulled the RGB values for all the colors used in the templates and created a simple background. Through trial and error, I found the columns used to make the content for each resolution flow correctly.
 

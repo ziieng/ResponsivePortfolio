@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./Assets/style.css">
 </head>
 
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column">
     <!-- Start nav bar -->
     <nav class="navbar navbar-expand-lg navbar-dark shadow">
         <!-- Name branding -->
@@ -66,80 +66,92 @@
     <!-- End nav bar -->
 
     <!-- Main body - Portfolio -->
-    <div class="container mt-5 clearfix">
-        <main class="col py-3 pgBody shadow">
+    <div class="container cont mt-5">
+        <main class="col py-3 mt-5 pgBody shadow">
             <h1 class="text-center">Portfolio</h1>
             <hr>
             <main class="row">
-                <div class="card col-md-5 portCard mx-auto my-2">
-                    <img src="Assets/screens/TP1.png" class="card-img-top"
-                        alt="A screenshot of the Trip Planner project">
+                <div class="card portCard mx-md-auto my-2">
                     <div class="card-body">
-                        <h5 class="card-title">Trip Planner</h5>
+                        <h3 class="card-title">Trip Planner</h3>
+                        <img src="Assets/screens/TP1.png" class="card-img-top"
+                            alt="A screenshot of the Trip Planner project">
                         <p class="card-text">An app for planning out a vacation! Search for restaurants and activities
                             in one of 15
                             destination cities, and save them to each day of the trip.</p>
                         <p class="mb-0">This project was done as part of a team, in the UW Coding Bootcamp program.</p>
                         <hr>
-                        <a target="_blank" href="https://ziieng.github.io/Trip-Planner/" class="card-link">Live App</a>
-                        <a target="_blank" href="https://github.com/ziieng/Trip-Planner" class="card-link">GitHub
-                            Repo</a>
-                    </div>
-                  </div>
-                  <div class="card col-md-5 portCard mx-auto my-2">
-                      <img src="Assets/screens/Weather.png" class="card-img-top"
-                          alt="A screenshot of the Weather Widget project">
-                      <div class="card-body">
-                          <h5 class="card-title">Weather Widget</h5>
-                          <p class="card-text">A weather dashboard to access weather data quickly in a user-defined list
-                              of cities.</p>
-                          <p class="mb-0">This project was done solo, in the UW Coding Bootcamp program.</p>
-                          <hr>
-                          <a target="_blank" href="https://ziieng.github.io/WeatherWidget/" class="card-link">Live
-                              App</a>
-                          <a target="_blank" href="https://github.com/ziieng/WeatherWidget" class="card-link">GitHub
-                              Repo</a>
-                      </div>
-                    </div>
-                    <div class="card col-md-5 portCard mx-auto my-2">
-                        <img src="Assets/screens/Planner.png" class="card-img-top"
-                            alt="A screenshot of the Day Planner project">
-                        <div class="card-body">
-                            <h5 class="card-title">Day To Day Planner</h5>
-                            <p class="card-text">A daily planner for scheduling repeated work events. Features color
-                                coding to indicate time blocks that are past, present, or future.</p>
-                            <p class="mb-0">This project was done solo, in the UW Coding Bootcamp program.</p>
-                            <hr>
-                            <a target="_blank" href="https://ziieng.github.io/DayToDayPlanner/" class="card-link">Live
-                                App</a>
-                            <a target="_blank" href="https://github.com/ziieng/DayToDayPlanner" class="card-link">GitHub
+                        <div class="linkBox mx-auto">
+                            <a target="_blank" href="https://ziieng.github.io/Trip-Planner/"
+                                class="btn btn-outline-info mx-1">Live App</a>
+                            <a target="_blank" href="https://github.com/ziieng/Trip-Planner"
+                                class="btn btn-outline-info mx-1">GitHub
                                 Repo</a>
                         </div>
-                      </div>
-                      <div class="card col-md-5 portCard mx-auto my-2">
-                          <img src="Assets/screens/Quiz.png" class="card-img-top"
-                              alt="A screenshot of the Code Check project">
-                          <div class="card-body">
-                              <h5 class="card-title">Code Check</h5>
-                              <p class="card-text">A simple interactive quiz for reviewing vanilla JavaScript concepts.
-                              </p>
-                              <p class="mb-0">This project was done solo, in the UW Coding Bootcamp program.</p>
-                              <hr>
-                              <a target="_blank" href="https://ziieng.github.io/CodeCheck/" class="card-link">Live
-                                  App</a>
-                              <a target="_blank" href="https://github.com/ziieng/CodeCheck" class="card-link">GitHub
-                                  Repo</a>
-                          </div>
+                    </div>
+                </div>
+                <div class="card portCard mx-md-auto my-2">
+                    <div class="card-body">
+                        <h3 class="card-title">Weather Widget</h3>
+                        <img src="Assets/screens/Weather.png" class="card-img"
+                            alt="A screenshot of the Weather Widget project">
+                        <p class="card-text">A weather dashboard to access weather data quickly in a user-defined list
+                            of cities.</p>
+                        <p class="mb-0">This project was done solo, in the UW Coding Bootcamp program.</p>
+                        <hr>
+                        <div class="linkBox mx-auto">
+                            <a target="_blank" href="https://ziieng.github.io/WeatherWidget/"
+                                class="btn btn-outline-info mx-1">Live
+                                App</a>
+                            <a target="_blank" href="https://github.com/ziieng/WeatherWidget"
+                                class="btn btn-outline-info mx-1">GitHub
+                                Repo</a>
                         </div>
+                    </div>
+                </div>
+                <div class="card portCard mx-md-auto my-2">
+                    <div class="card-body">
+                        <h3 class="card-title">Day To Day Planner</h3>
+                        <img src="Assets/screens/Planner.png" class="card-img"
+                            alt="A screenshot of the Day Planner project">
+                        <p class="card-text">A daily planner for scheduling repeated work events. Features color
+                            coding to indicate time blocks that are past, present, or future.</p>
+                        <p class="mb-0">This project was done solo, in the UW Coding Bootcamp program.</p>
+                        <hr>
+                        <div class="linkBox mx-auto">
+                            <a target="_blank" href="https://ziieng.github.io/DayToDayPlanner/"
+                                class="btn btn-outline-info mx-1">Live
+                                App</a>
+                            <a target="_blank" href="https://github.com/ziieng/DayToDayPlanner"
+                                class="btn btn-outline-info mx-1">GitHub
+                                Repo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card portCard mx-md-auto my-2">
+                    <div class="card-body">
+                        <h3 class="card-title">Code Check</h3>
+                        <img src="Assets/screens/Quiz.png" class="card-img"
+                            alt="A screenshot of the Code Check project">
+                        <p class="card-text">A simple interactive quiz for reviewing vanilla JavaScript concepts.
+                        </p>
+                        <p class="mb-0">This project was done solo, in the UW Coding Bootcamp program.</p>
+                        <hr>
+                        <div class="linkBox mx-auto">
+                            <a target="_blank" href="https://ziieng.github.io/CodeCheck/"
+                                class="btn btn-outline-info mx-1">Live
+                                App</a>
+                            <a target="_blank" href="https://github.com/ziieng/CodeCheck"
+                                class="btn btn-outline-info mx-1">GitHub
+                                Repo</a>
+                        </div>
+                    </div>
+                </div>
             </main>
         </main>
     </div>
-
-    <!-- Spacer to force margin between footer and main -->
-    <div class="my-5"></div>
-
     <!-- Start footer -->
-    <footer class="footer py-3 mt-5 clearfix">
+    <footer class="footer mt-5">
         <div class="container d-flex justify-content-center">
             <span class="text-muted">&copy; Copyright 2020 Christina Engelhardt</span>
         </div>

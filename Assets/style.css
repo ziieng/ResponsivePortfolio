@@ -8,10 +8,15 @@ body {
     background-image: url("fadedscales.png");
     background-repeat: repeat;
     font-family: 'Open Sans',
-    sans-serif;
+        sans-serif;
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4rem;
+    z-index: 2000;
     background-color: #272635;
     border-bottom: #187996 thick solid;
 }
@@ -22,7 +27,7 @@ body {
     padding-right: 1rem;
     border-radius: 10px;
     font-family: 'Overlock',
-    cursive;
+        cursive;
     font-weight: bold;
     font-size: x-large;
     color: #F2F4FF;
@@ -32,7 +37,7 @@ h1 {
     color: #105266;
     font-weight: bold;
     font-family: 'Overlock',
-    cursive;
+        cursive;
 }
 
 .pgBody {
@@ -52,13 +57,30 @@ h1 {
     border-radius: 5px;
 }
 
+body hr {
+    border: thin dashed #503859;
+}
+
 .portCard {
     border: thin solid #272635;
     background-color: #F2F4FF;
-}
+    margin-left: 10px;
+    margin-right: 10px;
+    }
 
-body hr {
-    border: thin dashed #503859;
+    @media (min-width: 768px) {
+        .portCard {
+            min-width: 40%;
+            max-width: 45%;
+        }
+    }
+
+    .card-body .card-title {
+        font-family: 'Overlock',
+            cursive;
+        color: #105266;
+        font-weight: bold;
+        text-align: center;
 }
 
 .portCard img {
@@ -67,15 +89,43 @@ body hr {
     margin-top: 3px;
 }
 
+.linkBox {
+    width: fit-content;
+}
+
+.linkBox .btn-outline-info {
+    color: #F2F4FF;
+    background-color: #187996;
+    border-color: #105266;
+    /*set the color you want here*/
+}
+
+.linkBox .btn-outline-info:hover,
+.linkBox .btn-outline-info:focus,
+.linkBox .btn-outline-info:active,
+.linkBox .btn-outline-info.active,
+.open>.dropdown-toggle.btn-outline-info {
+    color: #F2F4FF;
+    background-color: #105266;
+    border-color: rgb(37, 87, 131);
+    /*set the color you want here*/
+}
+
 dl dt {
     text-align: right !important;
 }
 
+.cont {
+    min-height: 85vh;
+    margin-bottom: auto;
+    flex-grow: 0 1 auto;
+}
+
 .footer {
-    position: fixed;
-    bottom: 0;
-    margin-top: 2rem;
+    flex-shrink: 0;
     width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: #272635;
     border-top: #187996 thick solid;
 }
