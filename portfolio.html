@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zii Engelhardt - Portfolio</title>
     <!-- link Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Overlock:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -16,7 +17,7 @@
 
 <body class="d-flex flex-column h-100">
     <!-- Start nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow">
         <!-- Name branding -->
         <a class="navbar-brand" href="index.html" style="color: white; font-weight: bold;">Zii Engelhardt</a>
         <!-- Establish hamburger for narrow screens -->
@@ -25,7 +26,30 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Navigation here down collapses on narrower screens -->
-        <div class="collapse navbar-collapse" id="CollapsedNav">
+        <div class="collapse ml-5 navbar-collapse" id="CollapsedNav">
+            <ul class="navbar-nav mt-2 mt-lg-0 mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="mailto:cjengelhardt@gmail.com" aria-label="Email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://github.com/ziieng" aria-label="GitHub">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/ziieng/"
+                        aria-label="LinkedIn">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="Assets/Engelhardt Resume 2020.pdf" aria-label="Resume">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
             <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
@@ -43,36 +67,70 @@
 
     <!-- Main body - Portfolio -->
     <div class="container mt-5 clearfix">
-        <main class="col-md-8 bg-white py-3">
-            <h1>Portfolio</h1>
+        <main class="col py-3 pgBody shadow">
+            <h1 class="text-center">Portfolio</h1>
             <hr>
-            <main>
-                <div class="row">
-                    <div class="col-lg-6 p-3">
-                        <img class="img-fluid" src="Assets/PreviousHair.jpg"
-                            alt="Zii, a nerdy girl with short, curly brown hair and 'eyebrow' style brown glasses. In this picture she doesn't yet have a side-shave.">
+            <main class="row">
+                <div class="card col-md-5 portCard mx-auto my-2">
+                    <img src="Assets/screens/TP1.png" class="card-img-top"
+                        alt="A screenshot of the Trip Planner project">
+                    <div class="card-body">
+                        <h5 class="card-title">Trip Planner</h5>
+                        <p class="card-text">An app for planning out a vacation! Search for restaurants and activities
+                            in one of 15
+                            destination cities, and save them to each day of the trip.</p>
+                        <p class="mb-0">This project was done as part of a team, in the UW Coding Bootcamp program.</p>
+                        <hr>
+                        <a target="_blank" href="https://ziieng.github.io/Trip-Planner/" class="card-link">Live App</a>
+                        <a target="_blank" href="https://github.com/ziieng/Trip-Planner" class="card-link">GitHub
+                            Repo</a>
                     </div>
-                    <div class="col-lg-6 p-3">
-                        <img class="img-fluid" src="Assets/ElevatorCropped.jpg"
-                            alt="Zii, a nerdy girl with short, curly brown hair and rectangular glasses. From this photo on, she has one side of her hair buzzed very short. Her t-shirt reads 'CHAOTIC GOOD: The right thing, the wrong way.'">
+                  </div>
+                  <div class="card col-md-5 portCard mx-auto my-2">
+                      <img src="Assets/screens/Weather.png" class="card-img-top"
+                          alt="A screenshot of the Weather Widget project">
+                      <div class="card-body">
+                          <h5 class="card-title">Weather Widget</h5>
+                          <p class="card-text">A weather dashboard to access weather data quickly in a user-defined list
+                              of cities.</p>
+                          <p class="mb-0">This project was done solo, in the UW Coding Bootcamp program.</p>
+                          <hr>
+                          <a target="_blank" href="https://ziieng.github.io/WeatherWidget/" class="card-link">Live
+                              App</a>
+                          <a target="_blank" href="https://github.com/ziieng/WeatherWidget" class="card-link">GitHub
+                              Repo</a>
+                      </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 p-3">
-                        <img class="img-fluid" src="Assets/LineEnertainment.jpg"
-                            alt="Zii and another woman, both grinning at the camera. They're in matching red t-shirts and silk-flower lei, with a busy hallway of a convention in the background. Zii has a foam shark hat on her head, and the shark is wearing a tiara.">
-                    </div>
-                    <div class="col-lg-6 p-3">
-                        <img class="img-fluid" src="Assets/HowlOween.jpg"
-                            alt="Spooky Halloween Skeleton Zii, featuring a lack of glasses and a lot of black eyeshadow as 'contouring'.">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 p-3">
-                        <img class="img-fluid" src="Assets/CroppedSCA.jpg"
-                            alt="A shot from farther away, showing Zii in costume at an SCA event. She's dressed as a 16th century Landsknecht camp-frau, in a green dress with brown trim. Her hair is hidden in a white turban-like head wrap.">
-                    </div>
-                </div>
+                    <div class="card col-md-5 portCard mx-auto my-2">
+                        <img src="Assets/screens/Planner.png" class="card-img-top"
+                            alt="A screenshot of the Day Planner project">
+                        <div class="card-body">
+                            <h5 class="card-title">Day To Day Planner</h5>
+                            <p class="card-text">A daily planner for scheduling repeated work events. Features color
+                                coding to indicate time blocks that are past, present, or future.</p>
+                            <p class="mb-0">This project was done solo, in the UW Coding Bootcamp program.</p>
+                            <hr>
+                            <a target="_blank" href="https://ziieng.github.io/DayToDayPlanner/" class="card-link">Live
+                                App</a>
+                            <a target="_blank" href="https://github.com/ziieng/DayToDayPlanner" class="card-link">GitHub
+                                Repo</a>
+                        </div>
+                      </div>
+                      <div class="card col-md-5 portCard mx-auto my-2">
+                          <img src="Assets/screens/Quiz.png" class="card-img-top"
+                              alt="A screenshot of the Code Check project">
+                          <div class="card-body">
+                              <h5 class="card-title">Code Check</h5>
+                              <p class="card-text">A simple interactive quiz for reviewing vanilla JavaScript concepts.
+                              </p>
+                              <p class="mb-0">This project was done solo, in the UW Coding Bootcamp program.</p>
+                              <hr>
+                              <a target="_blank" href="https://ziieng.github.io/CodeCheck/" class="card-link">Live
+                                  App</a>
+                              <a target="_blank" href="https://github.com/ziieng/CodeCheck" class="card-link">GitHub
+                                  Repo</a>
+                          </div>
+                        </div>
             </main>
         </main>
     </div>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zii Engelhardt</title>
     <!-- link fonts, Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Overlock:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -16,7 +17,7 @@
 
 <body class="d-flex flex-column h-100">
     <!-- Start nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow">
         <!-- Name branding -->
         <a class="navbar-brand" href="index.html" style="color: white; font-weight: bold;">Zii Engelhardt</a>
         <!-- Establish hamburger for narrow screens -->
@@ -25,7 +26,31 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Navigation here down collapses on narrower screens -->
-        <div class="collapse navbar-collapse" id="CollapsedNav">
+        <div class="ml-5 collapse navbar-collapse" id="CollapsedNav">
+            <ul class="navbar-nav mt-2 mt-lg-0 mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="mailto:cjengelhardt@gmail.com" aria-label="Email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://github.com/ziieng" aria-label="GitHub">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/ziieng/"
+                        aria-label="LinkedIn">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="Assets/Engelhardt Resume 2020.pdf" aria-label="Resume">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+
             <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
@@ -33,8 +58,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">About<span class="sr-only"> (current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About<span class="sr-only"> (current)</span></a>
                 </li>
             </ul>
         </div>
@@ -43,35 +68,62 @@
 
     <!-- Main body - about me -->
     <div class="container">
-        <main class="col-md-8 bg-white mt-5 py-3 clearfix">
-            <h1>About Zii</h1>
-            <hr>
-            <main>
-                <img src="Assets/business-zii.png" height=314px width=298px class="float-left mx-2"
-                    alt="Zii, a nerdy girl with short brown hair and rectangular glasses. Her hair is buzzed very short on one side, and is parted away from the camera. Behind her is a small black and white dog with large, pointed ears.">
-                <p>Hi, I'm Zii! My legal name is Christina, but I don't really use it because it's too common and just
-                    ends
-                    up causing confusion.</p>
-                <p>I started out my academic career with UW as a Finance major, but after graduation found that I didn't
-                    have the stomach to <s>do evil</s> go into investment banking. Instead, I have been working as an
-                    admin for the Department of the Navy. While I was in school, I tutored mathematics for 5 years and
-                    in my heart I'll always be a mathematician first. I loved tutoring, as it gave me an opportunity to
-                    help others share in the fun that mathematics can be. Unfortunately, I also have bills to pay!</p>
-                <p>I've always been a nerd, and my favorite hobby is playing video games - specifically ones that have
-                    an immersive story, or challenging puzzles. I'm terrible at Gears of Duty and the like, but can get
-                    through most of Spacechem without looking up any solutions! Before Boot Camp started, Animal
-                    Crossing was my main link to sanity - as it is for a lot of folks.</p>
-                <p>I work at two of the four domestic PAXes (West and East) and have been the manager of Line
-                    Entertainment for the
-                    past 5 years. It's a lot of work, but also a lot of fun and I value all the friends and connections
-                    I've made there over the 12 years I've been Enforcing.</p>
-                <p>My family consists of my partner and our dog, who is essentially our daughter. As tends to happen
-                    with only children, she's a little spoiled and gets way too excited in drive-thru's (pictured).
-                    Whenever we go somewhere like the bank and she doesn't get treats, she's always deeply disappointed
-                    in my ability to provide for her needs.</p>
-                <p>At least she's cute.</p>
-            </main>
-        </main>
+        <div class="col-md-10 mt-5 py-3 pgBody shadow clearfix">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="display-4 text-center">Zii Engelhardt</h1>
+                    <p class="lead text-center">Web developer specializing in intuitive user interface design.</p>
+                    <p>With my unusual background and experience working with users at every level of the "tech-savvy"
+                        spectrum, I am ready to help your company build a better way to connect with your customers.
+                        <strong>If
+                            customers can't effectively interact with your products, what is the point of building
+                            them?</strong>
+                    </p>
+                </div>
+                <div class="col-md-4 mt-2 mt-md-5 profileImg">
+                    <img src="Assets/business-zii.png" class="img-fluid rounded"
+                        alt="Zii, a nerdy girl with short, curly brown hair and rectangular glasses. Her hair is buzzed very short on one side, and is parted away from the camera.">
+                </div>
+            </div>
+            <div class="row mx-auto">
+                <div class="col-md-5">
+                    <p class="mb-0">Technologies I've worked in:</p>
+                    <ul class="mt-0">
+                        <li>Node.js</li>
+                        <li>jQuery</li>
+                        <li>JavaScript</li>
+                        <li>CSS</li>
+                        <li>HTML5</li>
+                    </ul>
+
+                </div>
+                <div class="col-md-7 mt-3">
+                    <dl class="row">
+                        <dt class="col-sm-3">Email:</dt>
+                        <dd class="col-sm-9"><a target="_blank" href="mailto:cjengelhardt@gmail.com"> <i
+                                    class="fa fa-envelope" aria-hidden="true"></i> cjengelhardt@gmail.com</a>
+                        </dd>
+
+                        <dt class="col-sm-3">GitHub:</dt>
+                        <dd class="col-sm-9">
+                            <a target="_blank" href="https://github.com/ziieng"><i class="fa fa-github"
+                                    aria-hidden="true"></i>
+                                github.com/ziieng</a>
+                        </dd>
+
+                        <dt class="col-sm-3">LinkedIn:</dt>
+                        <dd class="col-sm-9"><a target="_blank" href="https://www.linkedin.com/in/ziieng/"><i
+                                    class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                linkedin.com/in/ziieng/</a></dd>
+
+                        <dt class="col-sm-3">Resume:</dt>
+                        <dd class="col-sm-9"><a target="_blank" href="Assets/Engelhardt Resume 2020.pdf"><i
+                                    class="fa fa-file-text" aria-hidden="true"></i> PDF available here.</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Spacer to force margin between footer and main -->

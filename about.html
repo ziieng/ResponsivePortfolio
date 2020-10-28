@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zii Engelhardt</title>
+    <title>Zii Engelhardt - About</title>
     <!-- link fonts, Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Overlock:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -16,7 +17,7 @@
 
 <body class="d-flex flex-column h-100">
     <!-- Start nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow">
         <!-- Name branding -->
         <a class="navbar-brand" href="index.html" style="color: white; font-weight: bold;">Zii Engelhardt</a>
         <!-- Establish hamburger for narrow screens -->
@@ -25,7 +26,30 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Navigation here down collapses on narrower screens -->
-        <div class="collapse navbar-collapse" id="CollapsedNav">
+        <div class="collapse ml-5 navbar-collapse" id="CollapsedNav">
+            <ul class="navbar-nav mt-2 mt-lg-0 mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="mailto:cjengelhardt@gmail.com" aria-label="Email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://github.com/ziieng" aria-label="GitHub">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/ziieng/"
+                        aria-label="LinkedIn">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="Assets/Engelhardt Resume 2020.pdf" aria-label="Resume">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
             <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
@@ -43,15 +67,17 @@
 
     <!-- Main body - about me -->
     <div class="container">
-        <main class="col-md-8 bg-white mt-5 py-3 clearfix">
-            <h1>About Zii</h1>
+        <!-- <div class="row"> -->
+        <main class="col-md-10 mt-4 py-3 pgBody shadow clearfix">
+            <h1 class="text-center">About Zii</h1>
             <hr>
             <main>
-                <img src="Assets/MeAndFreds.jpg" height=250px width=250px class="float-left mx-2"
+                <div class="col-md-6 float-left profileImg">
+                    <img src="Assets/MeAndFreds.jpg" class="img-fluid rounded"
                     alt="Zii, a nerdy girl with short brown hair and rectangular glasses. Her hair is buzzed very short on one side, and is parted away from the camera. Behind her is a small black and white dog with large, pointed ears.">
-                <p>Hi, I'm Zii! My legal name is Christina, but I don't really use it because it's too common and just
-                    ends
-                    up causing confusion.</p>
+                </div>
+                <p>Hi, I'm Zii! My legal name is Christina, but I don't use it because it's super common and I don't
+                    like it very much.</p>
                 <p>I started out my academic career with UW as a Finance major, but after graduation found that I didn't
                     have the stomach to <s>do evil</s> go into investment banking. Instead, I have been working as an
                     admin for the Department of the Navy. While I was in school, I tutored mathematics for 5 years and
@@ -59,8 +85,8 @@
                     help others share in the fun that mathematics can be. Unfortunately, I also have bills to pay!</p>
                 <p>I've always been a nerd, and my favorite hobby is playing video games - specifically ones that have
                     an immersive story, or challenging puzzles. I'm terrible at Gears of Duty and the like, but can get
-                    through most of Spacechem without looking up any solutions! Before Boot Camp started, Animal
-                    Crossing was my main link to sanity - as it is for a lot of folks.</p>
+                    through most of Spacechem and Infinifactory without looking up any solutions! Before Boot Camp
+                    started, Animal Crossing was my main link to sanity - as it is for a lot of folks.</p>
                 <p>I work at two of the four domestic PAXes (West and East) and have been the manager of Line
                     Entertainment for the
                     past 5 years. It's a lot of work, but also a lot of fun and I value all the friends and connections
@@ -71,6 +97,7 @@
                     in my ability to provide for her needs. (At least she's cute.)</p>
             </main>
         </main>
+        <!-- </div> -->
     </div>
 
     <!-- Spacer to force margin between footer and main -->
