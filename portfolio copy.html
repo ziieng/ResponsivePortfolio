@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zii Engelhardt - Portfolio</title>
+    <!-- link Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Overlock:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- link personal stylesheet -->
+    <link rel="stylesheet" href="./Assets/style.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+    <!-- Start nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow">
+        <!-- Name branding -->
+        <a class="navbar-brand" href="index.html" style="color: white; font-weight: bold;">Zii Engelhardt</a>
+        <!-- Establish hamburger for narrow screens -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#CollapsedNav"
+            aria-controls="CollapsedNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navigation here down collapses on narrower screens -->
+        <div class="collapse ml-5 navbar-collapse" id="CollapsedNav">
+            <ul class="navbar-nav mt-2 mt-lg-0 mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="mailto:cjengelhardt@gmail.com" aria-label="Email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://github.com/ziieng" aria-label="GitHub">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/ziieng/"
+                        aria-label="LinkedIn">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="Assets/Engelhardt Resume 2020.pdf" aria-label="Resume">
+                        <i class="fa fa-file-text" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Portfolio<span class="sr-only"> (current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End nav bar -->
+
+    <!-- Main body - Portfolio -->
+    <div class="container mt-5 clearfix">
+        <main class="col py-3 pgBody shadow">
+            <h1 class="text-center">Portfolio</h1>
+            <hr>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card portCard d-block w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Trip Planner</h5>
+                                <p class="card-text">An app for planning out a vacation! Search for restaurants and
+                                    activities
+                                    in one of 15
+                                    destination cities, and save them to each day of the trip.</p>
+                                <p class="mb-0">This project was done as part of a team, in the UW Coding Bootcamp
+                                    program.</p>
+                                <hr>
+                                <a target="_blank" href="https://ziieng.github.io/Trip-Planner/" class="card-link">Live
+                                    App</a>
+                                <a target="_blank" href="https://github.com/ziieng/Trip-Planner"
+                                    class="card-link">GitHub
+                                    Repo</a>
+                                <img src="Assets/screens/TP1.png" class="card-img-bottom"
+                                    alt="A screenshot of the Trip Planner project">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card portCard d-block w-100">
+                            <img src="Assets/screens/Weather.png" class="card-img-top"
+                                alt="A screenshot of the Weather Widget project">
+                            <div class="card-body">
+                                <h5 class="card-title">Weather Widget</h5>
+                                <p class="card-text">A weather dashboard to access weather data quickly in a
+                                    user-defined list
+                                    of cities.</p>
+                                <p class="mb-0">This project was done solo, in the UW Coding Bootcamp program.</p>
+                                <hr>
+                                <a target="_blank" href="https://ziieng.github.io/WeatherWidget/" class="card-link">Live
+                                    App</a>
+                                <a target="_blank" href="https://github.com/ziieng/WeatherWidget"
+                                    class="card-link">GitHub
+                                    Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card portCard d-block w-100">
+                            <img src="Assets/screens/Planner.png" class="card-img-top"
+                                alt="A screenshot of the Day Planner project">
+                            <div class="card-body">
+                                <h5 class="card-title">Day To Day Planner</h5>
+                                <p class="card-text">A daily planner for scheduling repeated work events. Features color
+                                    coding to indicate time blocks that are past, present, or future.</p>
+                                <p class="mb-0">This project was done solo, in the UW Coding Bootcamp program.</p>
+                                <hr>
+                                <a target="_blank" href="https://ziieng.github.io/DayToDayPlanner/"
+                                    class="card-link">Live
+                                    App</a>
+                                <a target="_blank" href="https://github.com/ziieng/DayToDayPlanner"
+                                    class="card-link">GitHub
+                                    Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card portCard d-block w-100">
+                            <img src="Assets/screens/Quiz.png" class="card-img-top"
+                                alt="A screenshot of the Code Check project">
+                            <div class="card-body">
+                                <h5 class="card-title">Code Check</h5>
+                                <p class="card-text">A simple interactive quiz for reviewing vanilla JavaScript
+                                    concepts.
+                                </p>
+                                <p class="mb-0">This project was done solo, in the UW Coding Bootcamp program.</p>
+                                <hr>
+                                <a target="_blank" href="https://ziieng.github.io/CodeCheck/" class="card-link">Live
+                                    App</a>
+                                <a target="_blank" href="https://github.com/ziieng/CodeCheck" class="card-link">GitHub
+                                    Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next align-self-top" href="#carouselExampleControls" role="button"
+                    data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+
+        </main>
+        </main>
+    </div>
+
+    <!-- Spacer to force margin between footer and main -->
+    <div class="my-5"></div>
+
+    <!-- Start footer -->
+    <footer class="footer py-3 mt-5 clearfix">
+        <div class="container d-flex justify-content-center">
+            <span class="text-muted">&copy; Copyright 2020 Christina Engelhardt</span>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- Link jQuery for bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
