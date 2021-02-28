@@ -2,10 +2,10 @@
 light teal: 187996
 dark purple: 272635
 light purple: 503859
-whiteish: F2F4FF */
+whiteish: F2F4FF or f9f4fa*/
 
 body {
-    background-image: url("fadedscales.png");
+    background-image: url("smallersquares.png");
     background-repeat: repeat;
     font-family: 'Open Sans',
         sans-serif;
@@ -17,12 +17,17 @@ body {
     width: 100%;
     height: 4rem;
     z-index: 2000;
-    background-color: #272635;
-    border-bottom: #187996 thick solid;
+    background-color: #602c70;
+    border-bottom: #187996 3px solid;
+}
+
+.navbar-collapse {
+    background-color: #602c70;
+    text-align: center;
 }
 
 .navbar-brand {
-    background-color: #105266;
+    background-color: #187996;
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: 10px;
@@ -30,11 +35,28 @@ body {
         cursive;
     font-weight: bold;
     font-size: x-large;
-    color: #F2F4FF;
+    color: #f9f4fa;
+}
+
+/* unvisited link */
+.navbar .nav-item .nav-link a:link {
+    color: #ffffff !important;
+}
+/* visited link */
+.navbar .nav-item .nav-link a:visited {
+    color: #ffffff;
+}
+/* mouse over link */
+.navbar .nav-item .nav-link a:hover {
+    color: #f2f4f2;
+}
+/* selected link */
+.navbar .nav-item.nav-link a:active {
+    color: gainsboro;
 }
 
 h1 {
-    color: #105266;
+    color: #187996;
     font-weight: bold;
     font-family: 'Overlock',
         cursive;
@@ -43,7 +65,7 @@ h1 {
 .pgBody {
     margin-left: auto;
     margin-right: auto;
-    background-color: #F2F4FF;
+    background-color: #fcfafd;
     border-radius: 5px;
     border: thin solid #503859;
 }
@@ -53,7 +75,7 @@ h1 {
 }
 
 .profileImg img {
-    border: thin solid #272635;
+    border: thin solid #602c70;
     border-radius: 5px;
 }
 
@@ -62,25 +84,25 @@ body hr {
 }
 
 .portCard {
-    border: thin solid #272635;
-    background-color: #F2F4FF;
+    border: thin solid #602c70;
+    background-color: #f9f4fa;
     margin-left: 10px;
     margin-right: 10px;
-    }
+}
 
-    @media (min-width: 768px) {
-        .portCard {
-            min-width: 40%;
-            max-width: 45%;
-        }
+@media (min-width: 768px) {
+    .portCard {
+        min-width: 40%;
+        max-width: 45%;
     }
+}
 
-    .card-body .card-title {
-        font-family: 'Overlock',
-            cursive;
-        color: #105266;
-        font-weight: bold;
-        text-align: center;
+.card-body .card-title {
+    font-family: 'Overlock',
+        cursive;
+    color: #105266;
+    font-weight: bold;
+    text-align: center;
 }
 
 .portCard img {
@@ -94,7 +116,7 @@ body hr {
 }
 
 .linkBox .btn-outline-info {
-    color: #F2F4FF;
+    color: #f9f4fa;
     background-color: #187996;
     border-color: #105266;
     /*set the color you want here*/
@@ -105,14 +127,20 @@ body hr {
 .linkBox .btn-outline-info:active,
 .linkBox .btn-outline-info.active,
 .open>.dropdown-toggle.btn-outline-info {
-    color: #F2F4FF;
+    color: #f9f4fa;
     background-color: #105266;
     border-color: rgb(37, 87, 131);
     /*set the color you want here*/
 }
 
 dl dt {
-    text-align: right !important;
+    text-align: left !important;
+}
+
+@media (min-width: 768px) {
+    dl dt {
+        text-align: right !important;
+    }
 }
 
 .cont {
@@ -126,6 +154,46 @@ dl dt {
     width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #272635;
-    border-top: #187996 thick solid;
+    background-color: #602c70;
+    border-top: #187996 3px solid;
+}
+
+/* unvisited link */
+.pgBody a:link {
+    color: #187996;
+}
+
+/* visited link */
+.pgBody a:visited {
+    color: #503859;
+}
+
+/* mouse over link */
+.pgBody a:hover {
+    color: #105266;
+}
+
+/* selected link */
+.pgBody a:active {
+    color: #105266;
+}
+
+/* unvisited link */
+.pgBody .portCard a:link {
+    color: #ffffff;
+}
+
+/* visited link */
+.pgBody .portCard a:visited {
+    color: #f9f4fa;
+}
+
+/* mouse over link */
+.pgBody .portCard a:hover {
+    color: #ffffff;
+}
+
+/* selected link */
+.pgBody .portCard a:active {
+    color: #ffffff;
 }
